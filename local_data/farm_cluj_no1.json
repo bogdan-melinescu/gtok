@@ -1,0 +1,77 @@
+{
+  "farm_id": "farm_cluj_001",
+  "farmer_name": "Ion Pop",
+  "county": "Cluj",
+  "location": {
+    "latitude": 46.783,
+    "longitude": 23.603,
+    "altitude_m": 410
+  },
+  "total_area_ha": 15.0,
+  "crops": [
+    {
+      "type": "corn",
+      "area_ha": 7.0,
+      "planting_date": "2025-04-15",
+      "estimated_harvest_date": "2025-09-10",
+      "seed_type": "hybrid corn P9903",
+      "irrigation_needed": true,
+      "fertilization": {
+        "type": "ammonium nitrate",
+        "quantity_kg_ha": 150
+      },
+      "common_issues": ["drought", "wireworm"]
+    },
+    {
+      "type": "wheat",
+      "area_ha": 5.0,
+      "planting_date": "2024-10-10",
+      "estimated_harvest_date": "2025-07-15",
+      "seed_type": "autumn wheat Glosa",
+      "irrigation_needed": false,
+      "fertilization": {
+        "type": "NPK 15:15:15",
+        "quantity_kg_ha": 120
+      },
+      "common_issues": ["mold", "wind lodging"]
+    },
+    {
+      "type": "tomato",
+      "area_ha": 3.0,
+      "planting_date": "2025-05-01",
+      "estimated_harvest_date": "2025-08-01",
+      "seed_type": "Roma tomatoes",
+      "irrigation_needed": true,
+      "fertilization": {
+        "type": "manure",
+        "quantity_kg_ha": 2000
+      },
+      "common_issues": ["blight", "bacterial wilt"]
+    }
+  ],
+  "irrigation": {
+    "available": false,
+    "sources": [],
+    "future_plan": "drilling planned for 2026"
+  },
+  "soil": {
+    "type": "sandy loam",
+    "ph_approx": 6.5,
+    "fertility": "medium",
+    "drainage": "good",
+    "organic_carbon": "low"
+  },
+  "production_history": {
+    "2024": {
+      "corn": 6300,
+      "wheat": 4200,
+      "tomato": 11000
+    }
+  },
+  "market_prices": {
+    "corn": 0.85,
+    "wheat": 1.05,
+    "tomato": 2.20
+  },
+  "notes": "Farm in transition to organic. No sensors yet. Aims to connect with eco-conscious consumers."
+}
