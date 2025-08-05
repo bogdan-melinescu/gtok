@@ -8,7 +8,7 @@ os.chdir(project_root)
 # Add the src directory to the Python path
 sys.path.append(os.path.join(project_root, "src"))
 
-from farm.farm import Farm, Crop, Irrigation, Soil
+from farm.farm import Farm
 
 def main():
     # Set the working directory to the project root
