@@ -7,3 +7,11 @@
 | Air Polution | `https://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={API key}` | [link](https://openweathermap.org/api/air-pollution)
 | Weather Map | `https://tile.openweathermap.org/map/{layer}/{z}/{x}/{y}.png?appid={API key}` | [link](https://openweathermap.org/api/weathermaps)
 
+## Copernicus Climate Data Store (CDS API)
+
+### Instalation
+
+Follow the official site [here](https://cds.climate.copernicus.eu/how-to-api) to setup your API key for CDS data retrival.
+
+### Data sources
+

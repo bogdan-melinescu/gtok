@@ -108,4 +108,9 @@ dependencies:
   - xz=5.6.4=h46256e1_1
   - yarl=1.18.0=py311h46256e1_0
   - zlib=1.2.13=h4b97444_1
+  - pip:
+      - cdsapi==0.7.6
+      - ecmwf-datastores-client==0.4.0
+      - multiurl==0.3.7
+      - tqdm==4.67.1
 prefix: /Users/bogdanmel/miniconda3/envs/tf
