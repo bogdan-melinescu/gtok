@@ -1,0 +1,270 @@
+{
+    "farm_info": {
+        "name": "My Farm",
+        "location": "Romania",
+        "latitude": 45.9432,
+        "longitude": 24.9668,
+        "version": "1.2"
+    },
+    "fields": [
+        {
+            "id": "field_A",
+            "name": "Parcela Nord",
+            "area_ha": 5.0,
+            "boundary": [
+                {
+                    "lat": 46.83272043023766,
+                    "lon": 24.17629055822008
+                },
+                {
+                    "lat": 46.83318284358206,
+                    "lon": 24.176730440479606
+                },
+                {
+                    "lat": 46.83320486316589,
+                    "lon": 24.177159593903536
+                },
+                {
+                    "lat": 46.83290392807272,
+                    "lon": 24.177878425888625
+                },
+                {
+                    "lat": 46.832368112638086,
+                    "lon": 24.17746000130029
+                }
+            ]
+        },
+        {
+            "id": "field_B",
+            "name": "Parcela Sud",
+            "area_ha": 3.5,
+            "boundary": [
+                {
+                    "lat": 46.83332964063712,
+                    "lon": 24.17685918650679
+                },
+                {
+                    "lat": 46.83413701727248,
+                    "lon": 24.177567289656274
+                },
+                {
+                    "lat": 46.83352781602541,
+                    "lon": 24.178758190407684
+                },
+                {
+                    "lat": 46.83299934669933,
+                    "lon": 24.178425596504137
+                }
+            ]
+        }
+    ],
+    "crops": [
+        {
+            "id": "crop_001",
+            "name": "Floarea Soarelui",
+            "variety": "Unknown",
+            "field_id": "field_A",
+            "area_ha": 5.0,
+            "year": 2025,
+            "settings": {
+                "irrigation": false,
+                "organic": false
+            },
+            "scientific_parameters": {
+                "gdd_params": {
+                    "base_temp_c": 6.0,
+                    "optimal_temp_c": 25.0,
+                    "max_temp_c": 35.0,
+                    "method": "standard"
+                },
+                "bbch_thresholds": {
+                    "09": 80,
+                    "10": 120,
+                    "30": 450,
+                    "50": 600,
+                    "60": 750,
+                    "89": 1400
+                },
+                "water_params": {
+                    "kc_initial": 0.35,
+                    "kc_mid": 1.15,
+                    "kc_end": 0.35,
+                    "rooting_depth_max_m": 1.5,
+                    "depletion_fraction_p": 0.45
+                },
+                "stress_thresholds": {
+                    "moisture_stress_index_limit": 0.5
+                }
+            },
+            "calendar": [
+                {
+                    "id": "act_001",
+                    "name": "Arat",
+                    "type": "soil_preparation",
+                    "timing": {
+                        "planned_month": "2024-10",
+                        "planned_date": null,
+                        "estimated_duration_days": 1
+                    },
+                    "status": "planned",
+                    "resources": {
+                        "machinery": [],
+                        "inputs": []
+                    },
+                    "notes": "Pregătire sol"
+                },
+                {
+                    "id": "act_002",
+                    "name": "Discuit",
+                    "type": "soil_preparation",
+                    "timing": {
+                        "planned_month": "2025-04",
+                        "planned_date": null
+                    },
+                    "status": "planned",
+                    "resources": {}
+                },
+                {
+                    "id": "act_003",
+                    "name": "Semănat",
+                    "type": "planting",
+                    "timing": {
+                        "planned_month": "2025-04",
+                        "planned_date": null
+                    },
+                    "status": "planned",
+                    "resources": {
+                        "seeds": {
+                            "type": "Floarea Soarelui",
+                            "quantity": null,
+                            "unit": "kg/ha"
+                        }
+                    }
+                },
+                {
+                    "id": "act_004",
+                    "name": "Ierbicidare",
+                    "type": "maintenance",
+                    "timing": {
+                        "planned_month": "2025-06",
+                        "planned_date": null
+                    },
+                    "status": "planned",
+                    "resources": {
+                        "inputs": [
+                            {
+                                "type": "herbicide",
+                                "name": "Generic Herbicide"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "act_005",
+                    "name": "Recoltare",
+                    "type": "harvest",
+                    "timing": {
+                        "planned_month": "2025-09",
+                        "planned_date": null,
+                        "is_estimated": true
+                    },
+                    "status": "planned",
+                    "outputs": {
+                        "estimated_yield": null,
+                        "unit": "tons"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "crop_002",
+            "name": "Lucernă",
+            "variety": "Unknown",
+            "field_id": "field_B",
+            "scientific_parameters": {
+                "gdd_params": {
+                    "base_temp_c": 5.0,
+                    "optimal_temp_c": 25.0,
+                    "max_temp_c": 35.0,
+                    "method": "standard"
+                },
+                "bbch_thresholds": {
+                    "09": 100,
+                    "10": 150,
+                    "50": 400,
+                    "60": 550
+                },
+                "water_params": {
+                    "kc_initial": 0.4,
+                    "kc_mid": 0.95,
+                    "kc_end": 0.9,
+                    "rooting_depth_max_m": 2.0,
+                    "depletion_fraction_p": 0.5
+                },
+                "stress_thresholds": {
+                    "moisture_stress_index_limit": 0.5
+                }
+            },
+            "calendar": [
+                {
+                    "id": "act_006",
+                    "name": "Arat",
+                    "type": "soil_preparation",
+                    "timing": {
+                        "planned_month": "2024-10",
+                        "planned_date": null
+                    },
+                    "status": "planned"
+                },
+                {
+                    "id": "act_007",
+                    "name": "Discuit",
+                    "type": "soil_preparation",
+                    "timing": {
+                        "planned_month": "2025-05",
+                        "planned_date": null
+                    },
+                    "status": "planned"
+                },
+                {
+                    "id": "act_008",
+                    "name": "Semănat",
+                    "type": "planting",
+                    "timing": {
+                        "planned_month": "2025-05",
+                        "planned_date": null
+                    },
+                    "status": "planned",
+                    "resources": {
+                        "seeds": {
+                            "type": "Lucernă",
+                            "quantity": null
+                        }
+                    }
+                },
+                {
+                    "id": "act_009",
+                    "name": "Prima cosire",
+                    "type": "harvest",
+                    "timing": {
+                        "planned_month": "2025-07",
+                        "planned_date": null
+                    },
+                    "status": "planned",
+                    "notes": "First cutting"
+                },
+                {
+                    "id": "act_010",
+                    "name": "A doua cosire",
+                    "type": "harvest",
+                    "timing": {
+                        "planned_month": "2025-09",
+                        "planned_date": null
+                    },
+                    "status": "planned",
+                    "notes": "Second cutting"
+                }
+            ]
+        }
+    ]
+}

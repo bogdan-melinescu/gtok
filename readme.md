@@ -15,7 +15,3 @@ After installation, in the root of the repo open a command line and run
 `conda env create -f environment.yml`
 
 This will create a conda virtual environent called '**tf**' that you can then activate by running `conda activate tf` and it you ever forget all the conda environments you have (like I did) you can always run `conda env list`.
-
-## Input APIs 
-
-[API readme](/src/api/API_readme.md)
